@@ -1,0 +1,68 @@
+{
+  "name": "filmaron",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://zzaku.github.io/Filmaron",
+  "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/material": "^5.2.2",
+    "@progress/kendo-licensing": "^1.2.1",
+    "@progress/kendo-react-animation": "^4.12.0",
+    "@progress/kendo-react-inputs": "^4.12.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "gh": "^2.8.9",
+    "gh-pages": "^3.2.3",
+    "leaflet": "^1.7.1",
+    "mapbox-gl": "^2.6.1",
+    "mongoose": "^6.0.14",
+    "nodemon": "^2.0.15",
+    "pages": "^0.0.16",
+    "react": "^17.0.2",
+    "react-admin": "^3.19.2",
+    "react-dom": "^17.0.2",
+    "react-map-gl": "^6.1.17",
+    "react-scripts": "4.0.3",
+    "react-social-icons": "^5.6.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "exec": "npm run build&&gh-pages -d build",
+    "start": "react-scripts start",
+    "serveur": "cd Back-End && node Index.js",
+    "install-serveur": "cd Back-End && npm install",
+    "heroku-postbuild": "npm run install-serveur && npm run build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
